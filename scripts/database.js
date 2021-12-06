@@ -1,10 +1,10 @@
 
 const database = {
-  conesOrDishes: [
-    { id: 1, coneOrDish: "Waffle Cone", price: 5 },
-    { id: 2, coneOrDish: "Waffle Bowl", price: 7 },
-    { id: 3, coneOrDish: "Sugar Cone", price: 3 },
-    { id: 4, coneOrDish: "Sundae Dish", price: 7 },
+  cones: [
+    { id: 1, cone: "Waffle Cone", price: 5 },
+    { id: 2, cone: "Waffle Bowl", price: 7 },
+    { id: 3, cone: "Sugar Cone", price: 3 },
+    { id: 4, cone: "Sundae Dish", price: 7 },
 ],
   flavors: [
       { id: 1, flavor: "Cookies & Cream", price: 7 },
@@ -27,7 +27,7 @@ const database = {
   customOrders: [
       {
           id: 1,
-          conesOrDishesId: 3,
+          conesId: 3,
           flavorsId: 2,
           toppingsId: 3,
           sizesID: 4,
@@ -35,4 +35,24 @@ const database = {
       }
   ],
   orderBuilder: {}
+}
+
+export const getCones = () => {
+  return database.cones.map(style => ({...cone}))
+}
+
+export const getFlavors = () => {
+  return database.flavors.map(size => ({...flavor}))
+}
+
+export const getToppings = () => {
+  return database.toppings.map(metal => ({...topping}))
+}
+
+export const getSizes = () => {
+  return database.sizes.map(order => ({...size}))
+}
+
+export const getOrders = () => {
+  return database.customOrders.map(order => ({...order}))
 }

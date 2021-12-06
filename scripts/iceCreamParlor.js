@@ -4,6 +4,8 @@
 // import { Toppings } from "toppings.js"
 // import { Cones } from "cones.js"
 
+import { IceCreamToppings } from "./toppings"
+
 document.addEventListener('click', () => {
     
 })
@@ -19,6 +21,7 @@ export const iceCreamParlor = () => {
     </section>
     <section class="choices_toppings options">
         <h1>Toppings</h1>
+        ${IceCreamToppings()}
     </section>
     <section class="choices_cones options">
         <h1>Cones</h1>
