@@ -1,29 +1,36 @@
+
 const database = {
+  conesOrDishes: [
+    { id: 1, coneOrDish: "Waffle Cone", price: 5 },
+    { id: 2, coneOrDish: "Waffle Bowl", price: 7 },
+    { id: 3, coneOrDish: "Sugar Cone", price: 3 },
+    { id: 4, coneOrDish: "Sundae Dish", price: 7 },
+],
   flavors: [
-      { id: 1, flavor: "Classic", price: 500 },
-      { id: 2, style: "Modern", price: 710 },
-      { id: 3, style: "Vintage", price: 965 }
+      { id: 1, flavor: "Cookies & Cream", price: 7 },
+      { id: 2, flavor: "Cookie Dough", price: 7 },
+      { id: 3, flavor: "Mint Chocolate Chip", price: 5 },
+      { id: 4, flavor: "Strawberry", price: 5 }
+  ],
+  toppings: [
+      { id: 1, topping: "Sprinkles", price: .50 },
+      { id: 2, topping: "Gummies", price: 1.50 },
+      { id: 3, topping: "Nuts", price: 2 },
+      { id: 4, topping: "Chocolate Syrup", price: 1.50},
   ],
   sizes: [
-      { id: 1, carets: 0.5, price: 405 },
-      { id: 2, carets: 0.75, price: 782 },
-      { id: 3, carets: 1, price: 1470 },
-      { id: 4, carets: 1.5, price: 1997 },
-      { id: 5, carets: 2, price: 3638 }
-  ],
-  metals: [
-      { id: 1, metal: "Sterling Silver", price: 12.42 },
-      { id: 2, metal: "14K Gold", price: 736.4 },
-      { id: 3, metal: "24K Gold", price: 1258.9 },
-      { id: 4, metal: "Platinum", price: 795.45 },
-      { id: 5, metal: "Palladium", price: 1241.0 }
-  ],
+    { id: 1, size: "Small", price: 2 },
+    { id: 2, size: "Medium", price: 4 },
+    { id: 3, size: "Large", price: 6 },
+    { id: 4, size: "Extra Large", price: 8 },
+],
   customOrders: [
       {
           id: 1,
-          metalId: 3,
-          sizeId: 2,
-          styleId: 3,
+          conesOrDishesId: 3,
+          flavorsId: 2,
+          toppingsId: 3,
+          sizesID: 4,
           timestamp: 1614659931693
       }
   ],
