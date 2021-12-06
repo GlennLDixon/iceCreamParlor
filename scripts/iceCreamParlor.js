@@ -1,7 +1,7 @@
 // import { Orders } from "orders.js"
-// import { Flavors } from "flavors.js"
+import { Flavors } from "flavors.js"
 // import { Size } from "size.js"
-// import { Toppings } from "toppings.js"
+//import { Toppings } from "toppings.js"
 // import { Cones } from "cones.js"
 
 document.addEventListener('click', () => {
