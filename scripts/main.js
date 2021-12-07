@@ -1,6 +1,6 @@
-import { iceCreamParlor } from "./iceCreamParlor";
+import { iceCreamParlor } from "./iceCreamParlor.js";
 
-const mainContainer = document.getElementById("container")
+const mainContainer = document.querySelector("#container")
 
 const renderAllHTML = () => {
     mainContainer.innerHTML = iceCreamParlor()

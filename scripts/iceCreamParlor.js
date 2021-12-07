@@ -1,8 +1,8 @@
-// import { Orders } from "orders.js"
-// import { Flavors } from "flavors.js"
-// import { Size } from "size.js"
-// import { Toppings } from "toppings.js"
-// import { Cones } from "cones.js"
+// import { Orders } from "./orders.js"
+import { Flavors } from "./flavors.js"
+// import { Size } from "./size.js"
+//import { Toppings } from "./toppings.js"
+// import { Cones } from "./cones.js"
 
 import { IceCreamToppings } from "./toppings"
 
@@ -15,6 +15,7 @@ export const iceCreamParlor = () => {
     <article class="choices">
     <section class="choices_flavors options">
         <h1>Flavors</h1>
+        ${Flavors()}
     </section>
     <section class="choices_size options">
         <h1>Sizes</h1>
