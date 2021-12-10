@@ -6,5 +6,9 @@ const renderAllHTML = () => {
     mainContainer.innerHTML = iceCreamParlor()
 }
 
+document.addEventListener("stateChanged", event => {
+    renderAllHTML()
+})
+
 renderAllHTML()
 
