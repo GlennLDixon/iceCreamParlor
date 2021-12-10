@@ -17,9 +17,9 @@ export const ConeSizes = () => {
     let html = "<ul>"
 
     
-    const listItemsArray = sizes.map(sizes => {
+    const listItemsArray = sizes.map(size => {
         return `<li>
-            <input type="radio" name="size" value="${size.id}" /> ${size.size}
+            <input type="radio" name="sizes" value="${size.id}" /> ${size.size}
         </li>`
     })
 
