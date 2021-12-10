@@ -33,7 +33,7 @@ export const iceCreamParlor = () => {
     </section>
 </article>
 <article>
-    <button class="orderButton">Place Order</button>
+    <button id="orderButton">Place Order</button>
 </article>
 <article>
     <h1>Order Section</h1>

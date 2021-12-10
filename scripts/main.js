@@ -7,6 +7,7 @@ const renderAllHTML = () => {
 }
 
 document.addEventListener("stateChanged", event => {
+    console.log("message")
     renderAllHTML()
 })
 
