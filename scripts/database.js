@@ -30,7 +30,7 @@ const database = {
       conesId: 3,
       flavorsId: 2,
       toppingsId: 3,
-      sizesID: 4,
+      sizesId: 4,
       timestamp: 1614659931693
     }
   ],
@@ -73,3 +73,17 @@ export const setSizes = (id) => {
   database.orderBuilder.sizesId = id
 }
 
+export const addCustomOrder = () => {
+  const newOrder = {...database.orderBuilder}
+
+  const lastIndex = database.customOrders.length - 1
+  newOrder.id = database.customOrders[lastIndex].id + 1
+
+  newOrder.timestamp = Date.now()
+
+  database.customOrders.push(newOrder)
+
+  database.orderBuilder = {}
+
+  document.dispatchEvent(new CustomEvent("stateChanged"))
+}
