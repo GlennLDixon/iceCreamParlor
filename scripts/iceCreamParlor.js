@@ -9,6 +9,7 @@ document.addEventListener('click', (event) => {
     if (event.target.id === "orderButton") {
         addCustomOrder()
     }
+
 })
 
 export const iceCreamParlor = () => {
