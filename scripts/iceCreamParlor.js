@@ -5,7 +5,7 @@ import { IceCreamToppings } from "./toppings.js"
 import { Cones } from "./cones.js"
 
 document.addEventListener('click', () => {
-    
+
 })
 
 export const iceCreamParlor = () => {

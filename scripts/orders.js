@@ -26,7 +26,7 @@ const buildOrderListItem = (order) => {
             return size.id === order.sizesId
         }
     )
-    const totalCost = foundCone.price + foundFlavor.price + foundTopping + foundSize.price
+    const totalCost = foundCone.price + foundFlavor.price + foundTopping.price + foundSize.price
 
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",
