@@ -13,13 +13,13 @@ document.addEventListener(
 )
 
 
-export const DiamondSizes = () => {
+export const ConeSizes = () => {
     let html = "<ul>"
 
-    // Use .map() for converting objects to <li> elements
+    
     const listItemsArray = sizes.map(size => {
         return `<li>
-            <input type="radio" name="size" value="${size.id}" /> ${size.carets}
+            <input type="radio" name="size" value="${size.id}" /> ${size.size}
         </li>`
     })
 
