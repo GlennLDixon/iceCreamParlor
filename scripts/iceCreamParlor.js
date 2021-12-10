@@ -17,6 +17,7 @@ export const iceCreamParlor = () => {
     </section>
     <section class="choices_size options">
         <h1>Sizes</h1>
+        ${Size()}
     </section>
     <section class="choices_toppings options">
         <h1>Toppings</h1>
@@ -24,6 +25,7 @@ export const iceCreamParlor = () => {
     </section>
     <section class="choices_cones options">
         <h1>Cones</h1>
+        ${Cones()}
     </section>
 </article>
 <article>
@@ -31,6 +33,7 @@ export const iceCreamParlor = () => {
 </article>
 <article>
     <h1>Order Section</h1>
+    ${Orders()}
 </article>
     `
 }
