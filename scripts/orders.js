@@ -8,7 +8,7 @@ const sizes = getSizes()
 const buildOrderListItem = (order) => {
     const foundCone = cones.find(
         (cone) => {
-            return cone.id === order.coneId
+            return cone.id === order.conesId
         }
     )
     const foundFlavor = flavors.find(

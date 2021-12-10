@@ -30,7 +30,7 @@ const database = {
       conesId: 3,
       flavorsId: 2,
       toppingsId: 3,
-      sizesID: 4,
+      sizesId: 4,
       timestamp: 1614659931693
     }
   ],
