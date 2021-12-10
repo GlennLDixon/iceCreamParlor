@@ -1,10 +1,10 @@
-import { getCones } from "./database"
+import { getCones } from "./database.js"
 
 const cones = getCones()
 
 document.addEventListener("change", (event) => {
     if (event.target.name === "cones") {
-        window.alert(parseInt(event.target.value))
+        setCone(parseInt(event.target.value))
     }
 })
 export const IcecreamCones = () => {

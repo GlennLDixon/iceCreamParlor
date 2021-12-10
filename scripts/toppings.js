@@ -1,4 +1,4 @@
-import { getToppings, setTopping } from "./database.js"
+import { getToppings, setToppings } from "./database.js"
 
 const toppings = getToppings()
 
@@ -6,7 +6,7 @@ document.addEventListener(
     "change",
     (event) => {
         if (event.target.name === "topping") {
-            setTopping(parseInt(event.target.value))
+            setToppings(parseInt(event.target.value))
         }
     }
 )
@@ -17,7 +17,7 @@ export const IceCreamToppings = () => {
    
     const listItems = toppings.map(size => {
         return `<li>
-            <input type="radio" name="size" value="${topping.id}" /> ${toppinig.toppings}
+            <input type="radio" name="size" value="${toppings.id}" /> ${toppings.toppings}
         </li>`
     })
 
