@@ -1,17 +1,19 @@
-import { getCones } from "./database.js"
+import { getCones, setCones } from "./database.js"
 
 const cones = getCones()
 
 document.addEventListener("change", (event) => {
     if (event.target.name === "cones") {
-        setCone(parseInt(event.target.value))
+        setCones(parseInt(event.target.value))
     }
 })
+
 export const IcecreamCones = () => {
-    let html = "<ul>"
+    let html = ""
+    html = "<ul>"
     const listItems = cones.map(cone => {
         return `<li>
-            <input type="radio" name="size" value="${cone.id}" /> ${cone.carets}
+            <input type="radio" name="cones" value="${cone.id}" /> ${cone.cone}
         </li>`
     })
     html += listItems.join("")
