@@ -7,7 +7,7 @@ import { Flavors } from "./flavors.js"
 import { IceCreamToppings } from "./toppings"
 
 document.addEventListener('click', () => {
-    
+
 })
 
 export const iceCreamParlor = () => {
