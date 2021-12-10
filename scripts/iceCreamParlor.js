@@ -3,8 +3,12 @@ import { Flavors } from "./flavors.js"
 import { IceCreamToppings } from "./toppings.js"
 import { ConeSizes } from "./sizes.js"
 import { IcecreamCones } from "./conesOrDish.js"
+import { addCustomOrder } from "./database.js"
 
-document.addEventListener('click', () => {
+document.addEventListener('click', (event) => {
+    if (event.target.id === "orderButton") {
+        addCustomOrder()
+    }
 
 })
 
@@ -29,7 +33,7 @@ export const iceCreamParlor = () => {
     </section>
 </article>
 <article>
-    <button class="orderButton">Place Order</button>
+    <button id="orderButton">Place Order</button>
 </article>
 <article>
     <h1>Order Section</h1>
