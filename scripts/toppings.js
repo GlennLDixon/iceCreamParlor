@@ -13,11 +13,11 @@ document.addEventListener(
 
 export const IceCreamToppings = () => {
     let html = "<ul>"
-
+    
    
-    const listItems = toppings.map(size => {
+    const listItems = toppings.map(topping => {
         return `<li>
-            <input type="radio" name="size" value="${toppings.id}" /> ${toppings.toppings}
+            <input type="radio" name="topping" value="${topping.id}" /> ${topping.topping}
         </li>`
     })
 
