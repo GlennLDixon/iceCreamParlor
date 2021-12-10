@@ -1,8 +1,8 @@
 import { Orders } from "./orders.js"
 import { Flavors } from "./flavors.js"
-import { Size } from "./sizes.js"
 import { IceCreamToppings } from "./toppings.js"
-import { Cones } from "./cones.js"
+import { ConeSizes } from "./sizes.js"
+import { IcecreamCones } from "./conesOrDish.js"
 
 document.addEventListener('click', () => {
     
@@ -17,7 +17,7 @@ export const iceCreamParlor = () => {
     </section>
     <section class="choices_size options">
         <h1>Sizes</h1>
-        ${Size()}
+        ${ConeSizes()}
     </section>
     <section class="choices_toppings options">
         <h1>Toppings</h1>
@@ -25,7 +25,7 @@ export const iceCreamParlor = () => {
     </section>
     <section class="choices_cones options">
         <h1>Cones</h1>
-        ${Cones()}
+        ${IcecreamCones()}
     </section>
 </article>
 <article>
