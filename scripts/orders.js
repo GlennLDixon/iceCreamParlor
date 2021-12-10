@@ -1,4 +1,4 @@
-import { getCones, getFlavors, getToppings, getSizes, getOrders } from "./database"
+import { getCones, getFlavors, getToppings, getSizes, getOrders } from "./database.js"
 
 const cones = getCones()
 const flavors = getFlavors()

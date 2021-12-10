@@ -27,7 +27,7 @@ const database = {
   customOrders: [
     {
       id: 1,
-      conesId: 3,
+      conesoId: 3,
       flavorsId: 2,
       toppingsId: 3,
       sizesID: 4,
@@ -36,7 +36,7 @@ const database = {
   ],
   orderBuilder: {}
 }
-//@Michelle ; I fixed missing names after map(). -[Ivan]
+
 export const getCones = () => {
   return database.cones.map(cone => ({ ...cone }))
 }
@@ -56,3 +56,20 @@ export const getSizes = () => {
 export const getOrders = () => {
   return database.customOrders.map(order => ({ ...order }))
 }
+
+export const setCones = (id) => {
+  database.orderBuilder.conesId = id
+}
+
+export const setFlavors = (id) => {
+  database.orderBuilder.flavorsId = id
+}
+
+export const setToppings = (id) => {
+  database.orderBuilder.toppingsId = id
+}
+
+export const setSizes = (id) => {
+  database.orderBuilder.sizesId = id
+}
+
