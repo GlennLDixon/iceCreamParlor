@@ -1,0 +1,46 @@
+@import "styles.css";
+
+body,
+textarea {
+	/* background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg); */
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+
+h1 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0.75rem;
+}
+
+#purchase {
+    margin: 1rem 0 2rem 2rem;
+    padding: 0.5rem;
+    background-color: rgb(111, 72, 227);
+    color: rgb(230, 220, 255);
+    font-size: 1rem;
+}
+
+.header {
+    display: flex;
+}
+
+.logo {
+    max-height: 4rem;
+}
+
+.title {
+    text-align: center;
+    margin: 1rem 0 3rem 2rem;
+}
