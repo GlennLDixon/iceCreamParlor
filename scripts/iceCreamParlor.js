@@ -15,7 +15,8 @@ document.addEventListener('click', (event) => {
 export const iceCreamParlor = () => {
     return `
     <div class="header">
-        <h1>Scoop City Ice Cream Parlour</h1>
+        <h1>SCOOPS</h1>
+        <h3>an online ice cream parlour</h3>
     </div>
     <article class="choices">
     <section class="choices_flavors options">

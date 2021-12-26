@@ -1,30 +1,42 @@
 @import "styles.css";
+@import url('https://fonts.googleapis.com/css2?family=League+Script&family=Nosifer&display=swap');
 
-body,
-textarea {
-	/* background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg); */
-	font-family: "Comfortaa", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+body > #container{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg);
+    background-color: lightpink;
+    background-blend-mode: overlay;
+    
 }
 
 
 h1 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+    font-family: 'Nosifer', cursive;
+    letter-spacing: 1px;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
 }
 
 h2 {
-  font-family: "Patua One", serif;
-  letter-spacing: 2px;
+    font-family: 'League Script', cursive;
+    letter-spacing: 2px;
 }
 
-ul {
-    list-style-type: none;
-    padding-inline-start: 0.75rem;
+h3 {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    font-family: 'League Script', cursive;
+    letter-spacing: 1px;
+    margin-right: 2rem;
+    margin-top: 2.5rem;
+    font-size: 1rem;
 }
 
-#purchase {
+#orderbutton {
     margin: 1rem 0 2rem 2rem;
     padding: 0.5rem;
     background-color: rgb(111, 72, 227);
@@ -34,6 +46,8 @@ ul {
 
 .header {
     display: flex;
+    justify-content: space-between;
+    background-color: black;
 }
 
 .logo {
