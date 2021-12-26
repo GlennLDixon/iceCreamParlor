@@ -14,21 +14,24 @@ document.addEventListener('click', (event) => {
 
 export const iceCreamParlor = () => {
     return `
+    <div class="header">
+        <h1>Scoop City Ice Cream Parlour</h1>
+    </div>
     <article class="choices">
     <section class="choices_flavors options">
-        <h1>Flavors</h1>
+        <h2>Flavors</h2>
         ${Flavors()}
     </section>
     <section class="choices_size options">
-        <h1>Sizes</h1>
+        <h2>Sizes</h2>
         ${ConeSizes()}
     </section>
     <section class="choices_toppings options">
-        <h1>Toppings</h1>
+        <h2>Toppings</h2>
         ${IceCreamToppings()}
     </section>
     <section class="choices_cones options">
-        <h1>Cones</h1>
+        <h2>Cones</h2>
         ${IcecreamCones()}
     </section>
 </article>
@@ -36,7 +39,7 @@ export const iceCreamParlor = () => {
     <button id="orderButton">Place Order</button>
 </article>
 <article>
-    <h1>Order Section</h1>
+    <h2>Order Section</h2>
     ${Orders()}
 </article>
     `
