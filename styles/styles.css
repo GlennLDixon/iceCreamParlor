@@ -1,15 +1,22 @@
 .choices {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .options {
-  flex-basis: 24%;
-  margin: 0 2rem;
+  flex-basis: 50%;
+  margin: 2rem;
   border: 1px dashed dodgerblue;
   padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
+  
+}
+
+.listItem {
+  list-style-type: none;
+  text-align: center;
 }
 
 .customOrders {
