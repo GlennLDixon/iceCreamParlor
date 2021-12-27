@@ -16,7 +16,7 @@ export const Flavors = () => {
     html = "<ul>"
     
     for (const flavor of flavors) {
-        html += `<li>
+        html += `<li class="listItem">
         <input type="radio" name="flavor" value="${flavor.id}"/> ${flavor.flavor} 
         `
     }

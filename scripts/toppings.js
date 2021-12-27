@@ -16,7 +16,7 @@ export const IceCreamToppings = () => {
     
    
     const listItems = toppings.map(topping => {
-        return `<li>
+        return `<li class="listItem">
             <input type="radio" name="topping" value="${topping.id}" /> ${topping.topping}
         </li>`
     })
