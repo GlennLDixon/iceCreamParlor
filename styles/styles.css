@@ -2,16 +2,18 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 2rem; 
+  margin-bottom: 2rem;
 }
 
 .options {
-  flex-basis: 50%;
   margin: 2rem;
-  border: 1px dashed dodgerblue;
   padding: 1rem;
-  border-radius: 0.5rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgb(143, 143, 143);
-  
+  width: 250px;
+  height: 250px;
+  background: black;
+  border-radius: 50%
 }
 
 .listItem {
@@ -19,8 +21,11 @@
   text-align: center;
 }
 
+
 .customOrders {
   padding: 1rem 2rem;
   font-size: 1.1rem;
 }
+
+
 

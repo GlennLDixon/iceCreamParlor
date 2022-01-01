@@ -1,10 +1,10 @@
 @import "styles.css";
 @import url('https://fonts.googleapis.com/css2?family=League+Script&family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
 
 body > #container {
-    /* height: 100%;
-    width: 100%; */
-    background-image: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg);
+    background: url(https://cdn.britannica.com/50/80550-050-5D392AC7/Scoops-kinds-ice-cream.jpg);
     background-color: lightpink;
     background-blend-mode: overlay;
     background-repeat: no-repeat;
@@ -22,10 +22,12 @@ h1 {
     font-size: 2.5rem;
 }
 
-h2 {
+h2  {
     font-family: 'League Script', cursive;
     letter-spacing: 2px;
     text-align: center;
+    color: white;
+    margin-top: 3rem;
 }
 
 h3 {
@@ -41,15 +43,28 @@ h3 {
 
 ul {
     padding: 0;
+    color: white;
 }
 
+li {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 #orderButton {
-    margin: 2rem 0 2rem 2rem;
-    padding: 1rem;
+    padding: 2rem;
     font-family: 'League Script', cursive;
     background-color: black;
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .header {
@@ -58,3 +73,13 @@ ul {
     background-color: black;
 }
 
+.orderSection {
+    background-color: black;
+    text-align: center;
+    padding-bottom: 1rem;
+    
+}
+
+.orderSectionHeader {
+    padding-top: 1rem;
+}
