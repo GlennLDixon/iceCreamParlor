@@ -36,11 +36,11 @@ export const iceCreamParlor = () => {
         ${IcecreamCones()}
     </section>
 </article>
-<article>
+<article class="button">
     <button id="orderButton">place order</button>
 </article>
-<article>
-    <h2>Order Section</h2>
+<article class="orderSection">
+    <h2 class="orderSectionHeader">Order Section</h2>
     ${Orders()}
 </article>
     `
