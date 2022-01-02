@@ -9,7 +9,6 @@ body > #container {
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 
@@ -50,6 +49,7 @@ li {
     font-family: 'Montserrat Alternates', sans-serif;
 }
 #orderButton {
+    display: inline-block;
     padding: 2rem;
     font-family: 'League Script', cursive;
     background-color: black;
@@ -58,6 +58,12 @@ li {
     border-radius: 2rem;
     margin-bottom: 2rem;
     margin-top: 1rem;
+    border: black solid 3px;
+    
+}
+
+#orderButton:hover {
+    background: #d97890;
 }
 
 .button {
@@ -77,6 +83,7 @@ li {
     background-color: black;
     text-align: center;
     padding-bottom: 1rem;
+    /* opacity: 75%; */
     
 }
 
