@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 2rem; 
+  margin-top: 3rem; 
   margin-bottom: 2rem;
 }
 
@@ -13,7 +13,15 @@
   width: 250px;
   height: 250px;
   background: black;
-  border-radius: 50%
+  border: black solid 3px;
+  border-radius: 50%;
+  /* opacity: 75%; */
+}
+
+.options:hover {
+  background: #d97890;
+  color: black;
+  border: black, solid, 10px;
 }
 
 .listItem {
